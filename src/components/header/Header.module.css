@@ -34,3 +34,8 @@
     transform: scale(1.2);
     color: #61dafb;
 }
+
+NavLink.active{
+    color: #61dafb;
+    font-size: 55px;
+}

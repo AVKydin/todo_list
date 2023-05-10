@@ -1,14 +1,11 @@
 import './App.css';
-import {Header} from "./components/header";
-import {BrowserRouter, Route, Routes} from "react-router-dom";
-import {Monday} from "./components/monday/Monday";
-import {Sunday} from "./components/sunday/Sunday";
-import {Saturday} from "./components/saturday/Saturday";
-import {Friday} from "./components/friday/Friday";
-import {Thursday} from "./components/thursday/Thursday";
-import {Wednesday} from "./components/wednesday/Wednesday";
 import React from "react";
-import {Tuesday} from "./components/tuesday/Tuesday";
+import {BrowserRouter, Route, Routes} from "react-router-dom";
+
+import {Header} from "./components/header";
+import {Friday, Monday, Saturday, Sunday, Thursday, Tuesday, Wednesday} from "./components/daysOfTheWeek";
+
+
 
 function App() {
   return (
