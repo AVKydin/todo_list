@@ -3,7 +3,7 @@ import "./DayList.css";
 
 const DayList = (props) => {
   if (props.costs.length === 0) {
-    return <h2 className="cost-list__fallback">Нічого не заплановано, лежебока!</h2>;
+    return <h2 className="cost-list__fallback">Який день цікавить?</h2>;
   }
 
   return (

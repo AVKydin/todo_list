@@ -2,21 +2,21 @@ import React, { useState } from "react";
 import NewCost from "./components/NewCost/NewCost";
 import Days from "./components/Todos/Days";
 
-const INITIAL_COSTS = [
 
+const INITIAL_COSTS = [
+    ...JSON.parse(localStorage.getItem('todos'))
 ];
 
+console.log(INITIAL_COSTS)
 
 const App = () => {
   const [costs, setCosts] = useState(INITIAL_COSTS);
 
   const addCostHandler = (cost) => {
-      console.log(cost)
     setCosts((prevCosts) => {
-      return [...cost];
+      return [...cost, ...prevCosts];
     });
   };
-    console.log(costs)
   return (
     <div>
 
