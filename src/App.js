@@ -7,10 +7,10 @@ const INITIAL_COSTS = [
     ...JSON.parse(localStorage.getItem('todos'))
 ];
 
-console.log(INITIAL_COSTS)
 
 const App = () => {
   const [costs, setCosts] = useState(INITIAL_COSTS);
+
 
   const addCostHandler = (cost) => {
     setCosts((prevCosts) => {

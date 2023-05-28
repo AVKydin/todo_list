@@ -13,7 +13,8 @@ const DayFilter = (props) => {
       <div className="costs-filter__control">
         <label>Вибір дня</label>
         <select value={props.day} onChange={dayChangeHandler}>
-          {daysOfTheWeek.map(day => <option key={day} value={day}>{day}</option>)}
+          <option key={'вибери'} value={'вибери'} >вибери</option>)
+          {daysOfTheWeek.map(day => <option key={day} value={day} >{day}</option>)}
         </select>
       </div>
     </div>
