@@ -45,9 +45,7 @@ const CostForm = (props) => {
           <input
             value={inputAmount}
             onChange={amountChangeHandler}
-            type="number"
-            min="0.01"
-            step="0.01"
+            type="text"
           />
         </div>
         <div className="new-cost__control">
@@ -56,8 +54,6 @@ const CostForm = (props) => {
             value={inputDate}
             onChange={dateChangeHandler}
             type="date"
-            min="2019-01-01"
-            step="2022-12-31"
           />
         </div>
         <div className="new-cost__actions">
