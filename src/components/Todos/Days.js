@@ -8,7 +8,7 @@ import DayDate from "./DayDate";
 
 const Days = (props) => {
   const [selectedDay, setSelectedDay] = useState("Понеділок");
-
+  console.log(props)
   const dayChangeHandler = (day) => {
     setSelectedDay(day);
   };
@@ -23,7 +23,7 @@ const Days = (props) => {
         <DayFilter day={selectedDay} onChangeDay={dayChangeHandler} />
         <DayDate date={selectedDay}/>
         {/*<CostsDiagram costs={filteredCosts} />*/}
-        <DayList costs={filteredCosts} />
+        <DayList costs={filteredCosts} deleteTodo={props.deleteTodo}/>
       </Card>
     </div>
   );

@@ -13,7 +13,6 @@ const NewCost = (props) => {
     let costData2
     if (localStorage.getItem('todos')) {
       costData2 = JSON.parse(localStorage.getItem('todos'));
-      console.log(costData2)
       costData2.push(costData)
       localStorage.setItem('todos', JSON.stringify(costData2))
     } else {
