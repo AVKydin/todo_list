@@ -26,6 +26,7 @@
 }
 
 .cost-item__price {
+  display: flex;
   font-size: 1rem;
   font-weight: bold;
   color: #fefae1;

@@ -4,6 +4,7 @@ import DayFilter from "./DayFilter";
 import React, { useState } from "react";
 import DayList from "./DayList";
 import CostsDiagram from "./CostsDiagram";
+import DayDate from "./DayDate";
 
 const Days = (props) => {
   const [selectedDay, setSelectedDay] = useState("Понеділок");
@@ -16,11 +17,11 @@ const Days = (props) => {
     return cost.date === selectedDay
   })
 
-
   return (
     <div>
       <Card className="costs">
         <DayFilter day={selectedDay} onChangeDay={dayChangeHandler} />
+        <DayDate date={selectedDay}/>
         {/*<CostsDiagram costs={filteredCosts} />*/}
         <DayList costs={filteredCosts} />
       </Card>

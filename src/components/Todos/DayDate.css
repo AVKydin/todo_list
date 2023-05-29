@@ -1,8 +1,8 @@
 .cost-date {
   display: flex;
   flex-direction: column;
-  width: 8rem;
-  height: 5.5rem;
+  width: 100%;
+  height: 5rem;
   border: 1px solid #ececec;
   background-color: #2a5b84;
   color: #fefae1;
